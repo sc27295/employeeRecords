@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Employee.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(128,128,128); font-style: italic; }
+.s3 { color: rgb(0,128,0); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+Employee.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">public class </span><span class="s1">Employee </span><span class="s0">extends </span><span class="s1">Person { 
+    </span><span class="s2">//Data members</span><span class="s1"> 
+    </span><span class="s0">private double </span><span class="s1">annualSalary; 
+    </span><span class="s0">private int </span><span class="s1">hiredYear; 
+    </span><span class="s0">private </span><span class="s1">String ID; 
+ 
+    </span><span class="s2">//Constructor with parameters employee name, salary, date and id</span><span class="s1"> 
+ 
+    </span><span class="s0">public </span><span class="s1">Employee(String initialName, </span><span class="s0">double </span><span class="s1">initialSalary, </span><span class="s0">int </span><span class="s1">joinedYear, 
+                    String id){ 
+            </span><span class="s2">//Calls base class constructor</span><span class="s1"> 
+            </span><span class="s0">super</span><span class="s1">(initialName); 
+            annualSalary=initialSalary; 
+            hiredYear=joinedYear; 
+            ID=id; 
+    } 
+    </span><span class="s2">//Sets annual salary</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">setAnnualSalary(</span><span class="s0">double </span><span class="s1">newsSalary){ 
+        annualSalary=newsSalary; 
+    } 
+    </span><span class="s2">//Sets hired year</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">setHiredYear(</span><span class="s0">int </span><span class="s1">year){ 
+        hiredYear=year; 
+    } 
+    </span><span class="s2">//sets employee ID</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">setID(String newID){ 
+        ID=newID; 
+    } 
+    </span><span class="s2">//Returns annual Salary</span><span class="s1"> 
+    </span><span class="s0">public double </span><span class="s1">getAnnualSalary(){ 
+        </span><span class="s0">return </span><span class="s1">annualSalary; 
+    } 
+    </span><span class="s2">//Returns hired year</span><span class="s1"> 
+    </span><span class="s0">public int </span><span class="s1">getHiredYear(){ 
+        </span><span class="s0">return </span><span class="s1">hiredYear; 
+    } 
+    </span><span class="s2">// public employee ID</span><span class="s1"> 
+    </span><span class="s0">public </span><span class="s1">String getID(){ 
+        </span><span class="s0">return </span><span class="s1">ID; 
+    } 
+ 
+    </span><span class="s2">//Returns true if both employee objects are same</span><span class="s1"> 
+    </span><span class="s2">//otherwise returns false</span><span class="s1"> 
+    </span><span class="s0">public boolean </span><span class="s1">equals(Employee otherEmployee){ 
+        </span><span class="s0">if </span><span class="s1">(name.equals(otherEmployee.name)) 
+            </span><span class="s0">if </span><span class="s1">(annualSalary==otherEmployee.annualSalary) 
+                </span><span class="s0">if </span><span class="s1">(hiredYear==otherEmployee.hiredYear) 
+                    </span><span class="s0">if</span><span class="s1">(ID ==otherEmployee.ID) 
+                        </span><span class="s0">return true</span><span class="s1">; 
+        </span><span class="s0">return false</span><span class="s1">; 
+    } 
+    </span><span class="s2">//Prints the employee name, annual Salary, hired Year and ID</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">display(){ 
+        System.out.println(</span><span class="s3">&quot;Employee Name: &quot; </span><span class="s1">+name); 
+        System.out.println(</span><span class="s3">&quot;Employee Annual Salary: &quot; </span><span class="s1">+annualSalary); 
+        System.out.println(</span><span class="s3">&quot;Employee Hired Year: &quot; </span><span class="s1">+hiredYear); 
+        System.out.println(</span><span class="s3">&quot;Employee ID: &quot; </span><span class="s1">+ID); 
+        System.out.println(); 
+    } 
+} 
+</span></pre>
+</body>
+</html>
